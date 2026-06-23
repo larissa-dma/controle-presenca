@@ -21,3 +21,7 @@ jobs:
               -Dsonar.organization=larissa-dma
               -Dsonar.projectKey=controle-presenca
               -Dsonar.python.coverage.reportPaths=coverage.xml
+              -Dsonar.python.version=3.10
+              -Dsonar.sources=src
+              -Dsonar.tests=tests
+              -Dsonar.sourceEncoding=UTF-8
