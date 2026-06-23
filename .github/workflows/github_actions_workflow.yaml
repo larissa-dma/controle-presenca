@@ -17,6 +17,8 @@ jobs:
           pip install pytest pytest-cov
 
       - name: Run tests and generate coverage report
+        env:
+            DATABASE_URL: "sqlite:///:memory:"
         run: |
           pytest tests/ --cov=src --cov-report=xml
           
